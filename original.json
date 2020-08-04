@@ -1,0 +1,37 @@
+{
+  "platform": [
+    "production"
+  ],
+  "module": ["searcher"],
+  "json_dir": "time_data.json",
+  "threshold_rule": 0.5,
+  "searcher_info": {"port": 8003, "url": "/ServerOpsService/ops?info", "proxy": "/inner_proxy"},
+  "agent_host": "127.0.0.1",
+  "agent_port": 9000,
+  "proxy": false,
+  "debug": false,
+  "time_rule": {
+    "inc_rule": 1800,
+    "promotion_icon_rule": 3600,
+    "promotion_type_rule": 3600,
+    "promotion_address_rule": 1800,
+    "wjex_rule": 3600,
+    "wjtag_rule": 10800,
+    "delivery_dict_rule": 3600,
+    "pop_par_stock_rule": 3600,
+    "sku_penalty_v1_rule": 10800,
+    "store_stock_v2_rule": 3600,
+    "cover_area_rule": 3600,
+    "store_time_status_v2_rule": 3600,
+    "store_route_rule": 36000,
+    "query_promotion_rule": 3600,
+    "shop_penalty_rule": 36000,
+    "jp_warehouse_county_rule": 21780,
+    "activity_rule": 1800,
+    "coupon_rule": 1800,
+    "ecard_rule": 3600,
+    "financial_rule": 10800,
+    "rebate_rule": 3600,
+    "scene_rule": 3600
+  }
+}

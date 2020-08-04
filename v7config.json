@@ -1,0 +1,42 @@
+{
+  "platform": [
+    "production"
+  ],
+  "module": [
+    "searcher"
+  ],
+  "json_dir": "time_data.json",
+  "threshold_rule": 0.5,
+  "searcher_info": {
+    "port": 8003,
+    "url": "/ServerOpsService/ops?info",
+    "proxy": "/inner_proxy"
+  },
+  "agent_host": "127.0.0.1",
+  "agent_port": 9000,
+  "proxy": false,
+  "debug": false,
+  "data_type": {
+    "inc": {"path": "['latest']['inc']['inc']", "time_rule": 1800},
+    "sensi_promotion_icon": {"path": "['latest']['sensi_index']['promotion_icon']", "time_rule": 3600},
+    "sensi_promotion_address": {"path": "['latest']['sensi_index']['promotion_address']", "time_rule": 1800},
+    "sensi_wjex": {"path": "['latest']['sensi_index']['wjex']", "time_rule": 3600},
+    "sensi_wjtag": {"path": "['latest']['sensi_index']['wjtag']", "time_rule": 10800},
+    "sensi_delivery_dict": {"path": "['latest']['sensi_dict']['delivery_dict']", "time_rule": 3600},
+    "sensi_pop_par_stock": {"path": "['latest']['sensi_dict']['pop_par_stock']", "time_rule": 3600},
+    "sensi_sku_penalty_v1": {"path": "['latest']['sensi_dict']['sku_penalty_v1']", "time_rule": 10800},
+    "sensi_store_stock_v2": {"path": "['latest']['sensi_dict']['store_stock_v2']", "time_rule": 3600},
+    "sensi_cover_area": {"path": "['db']['global_dicts']['cover_area']['inc_latest']", "time_rule": 3600},
+    "sensi_store_time_status_v2": {"path": "['db']['global_dicts']['store_time_status_v2']['inc_latest']", "time_rule": 3600},
+    "sensi_store_route": {"path": "['db']['global_dicts']['store_route']['inc_latest']", "time_rule": 36000},
+    "sensi_query_promotion": {"path": "['db']['global_dicts']['query_promotion']['inc_latest']", "time_rule": 3600},
+    "sensi_shop_penalty": {"path": "['db']['global_dicts']['shop_penalty']['inc_latest']", "time_rule": 36000},
+    "sensi_jp_warehouse_county": {"path": "['db']['global_dicts']['jp_warehouse_county']['inc_latest']","time_rule": 21780},
+    "coupon_activity": {"path":"['coupon']['activity']['update_inc']", "time_rule": 1800},
+    "coupon_coupon": {"path": "['coupon']['coupon']['update_inc']", "time_rule": 1800},
+    "coupon_ecard": {"path":"['coupon']['ecard']['update_inc']", "time_rule": 3600},
+    "coupon_financial": {"path": "['coupon']['financial']['update_inc']", "time_rule": 10800},
+    "coupon_rebate": {"path": "['coupon']['rebate']['update_inc']", "time_rule": 3600},
+    "coupon_scene": {"path":"['coupon']['scene']['update_inc']", "time_rule": 3600}
+}
+}
